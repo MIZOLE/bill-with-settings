@@ -29,7 +29,8 @@ function settingsBill() {
  warningLevel = Number(warningLevelSettingElement.value);
  criticalLevel = Number(criticalLevelSettingElement.value);
 
-
+ totalColor()
+  
 }
 
 updateSettingsButton.addEventListener("click", settingsBill);
@@ -55,8 +56,8 @@ smsTotalSettingElement.innerHTML = totalSms3.toFixed(2);
 totalSettingElem.innerHTML = totalCost.toFixed(2);
 
   totalColor()
-  
-  
+}
+
  function totalColor(){
     totalSettingElem.classList.remove("danger");
     totalSettingElem.classList.remove("warning");
@@ -71,7 +72,7 @@ else if (totalCost >= criticalLevel){
    }
  }
 
- }
+ 
 
  theAddButtonElement.addEventListener('click', radioSettings);
 
